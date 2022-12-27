@@ -1,0 +1,16 @@
+<p>login works!</p>
+
+<button (click)="goBack()" >Back</button>
+
+<div>
+  <h3 [style.color]="'green'" >Login</h3>
+  <hr/>
+  <label [ngStyle]="myStyles">Username: </label>
+
+  <input type="text" [(ngModel)]="userName" />
+
+  <label class="my-style">Password: </label>
+
+</div>
+<h4>User name entered: {{userName}}</h4>
+<button (click)="login()" >Login</button>
