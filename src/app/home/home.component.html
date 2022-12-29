@@ -1,6 +1,7 @@
-<p>home works!</p>
-<label appHighlight>{{name}}</label>
-<div>{{student.name}}</div>
+<h1>Home component</h1>
+<h3>Date: {{today | date: 'dd/MMM/yyyy'}}</h3>
+<label appHighlight>{{name | lowercase}}</label>
+<div>{{student.name | custom}}</div>
 <p appHighlight> Directive example</p>
 <ul>
   <li *ngFor="let fruit of fruits">{{fruit.name}}</li>

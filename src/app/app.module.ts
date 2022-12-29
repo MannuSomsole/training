@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormsModule } from '@angular/forms';
+import { CustomPipe } from './custom.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     HighlightDirective,
     LoginComponent,
     HeaderComponent,
-    DashboardComponent
+    DashboardComponent,
+    CustomPipe
   ],
   imports: [
     BrowserModule,

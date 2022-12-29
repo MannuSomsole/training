@@ -3,6 +3,13 @@
   Welcome back, friend.
 </div>
 
+<button (click)="sendMessage()"> Send</button>
+
+<ul>
+  <li *ngFor="let msg of messages" >
+    {{msg.text}}
+  </li>
+</ul>
 <ng-template #loggedOut>
   Please friend, login.
 </ng-template>

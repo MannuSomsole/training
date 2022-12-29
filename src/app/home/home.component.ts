@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
     name: 'abc',
     school: 'ABC univ'
   };
+  today = new Date();
   constructor() { }
 
   ngOnInit(): void {
