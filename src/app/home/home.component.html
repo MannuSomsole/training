@@ -12,3 +12,11 @@
 </ol>
 
 <button routerLink="/login">Login</button>
+
+<button (click)="getUserData()">API CALL</button>
+
+<h3>{{userData?.name}}</h3>
+<h3>{{userData?.grade}}</h3>
+<div *ngFor="let place of userData?.placesToVisit">
+  <p>{{place}}</p>
+</div>

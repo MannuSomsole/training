@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 
 @Component({
@@ -21,12 +22,26 @@ export class HomeComponent implements OnInit {
     school: 'ABC univ'
   };
   today = new Date();
-  constructor() { }
+  userData:any;
+  constructor(public apiService: ApiService) { }
 
   ngOnInit(): void {
 
   }
 
+  getUserData() {
+    console.log('User Data');
+    this.apiService.getData('../assets/mockdata/user.json').subscribe(
+        data => {
+          console.log(data);
+          this.userData = data;
+
+        }, //next callback
+        error => { console.log("error") }, //error callback
+        () => { console.log("Completed") } //complete callback
+    )
+
+  }
 
 
 }
