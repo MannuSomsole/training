@@ -1,13 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
+  
 })
 export class HomeComponent implements OnInit {
+
+
+  public newname="Ramajnkj"
+  public message:any;
 
   fruits:any = [
     {id: 1, name:'Mango'},
@@ -23,7 +29,7 @@ export class HomeComponent implements OnInit {
   };
   today = new Date();
   userData:any;
-  constructor(public apiService: ApiService) { }
+  constructor(public apiService: ApiService,public router: Router) { }
 
   ngOnInit(): void {
 
@@ -35,6 +41,7 @@ export class HomeComponent implements OnInit {
         data => {
           console.log(data);
           this.userData = data;
+          console.log("sdfsdfsdgdfg:", this.userData);
 
         }, //next callback
         error => { console.log("error") }, //error callback
@@ -42,6 +49,11 @@ export class HomeComponent implements OnInit {
     )
 
   }
-
+  
+  goToUserComponent() {
+   
+    this.router.navigate(['user']);
+    
+  }
 
 }

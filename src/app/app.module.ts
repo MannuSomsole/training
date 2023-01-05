@@ -11,6 +11,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormsModule } from '@angular/forms';
 import { CustomPipe } from './custom.pipe';
 import { HttpClientModule } from "@angular/common/http";
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HttpClientModule } from "@angular/common/http";
     LoginComponent,
     HeaderComponent,
     DashboardComponent,
-    CustomPipe
+    CustomPipe,
+    UserComponent
   ],
   imports: [
     BrowserModule,
