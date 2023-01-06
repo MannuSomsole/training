@@ -1,0 +1,5 @@
+{
+    "name": "Test",
+    "place": "USA",
+    "cities": ["Newyork","Chicago","Seattle"]
+}

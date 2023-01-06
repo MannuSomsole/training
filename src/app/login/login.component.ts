@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   userName = 'test';
+  password="";
   myStyles = {
     'background-color': 'lime',
     'font-size': '20px',
@@ -18,13 +19,21 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  gotodashboard(pageName:string):void
+  {
+       this.router.navigate([`{pageName}`])
+  }
+  user() {
+    console.log('Go back clicked');
+    this.router.navigate(['user']);
+    
+  }
   goBack() {
     console.log('Go back clicked');
     this.router.navigate(['home']);
     // this.router.navigateByUrl('/login')
   }
-  login() {
+  dashboard() {
     console.log('Hello button clicked');
      this.router.navigate(['dashboard']);
   }

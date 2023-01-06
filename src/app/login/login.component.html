@@ -1,4 +1,4 @@
-<p>login works!</p>
+<p>login Component Html Page</p>
 
 <button (click)="goBack()">Back</button>
 
@@ -10,7 +10,10 @@
   <input type="text" [(ngModel)]="userName" />
 
   <label class="my-style">Password: </label>
+  <input type="text" [(ngModel)]="password" />
 
 </div>
 <h4>User name entered: {{userName}}</h4>
-<button (click)="login()" >Login</button>
+<h4>User name entered: {{password}}</h4>
+<button (click)="dashboard()" >dashboard</button>
+<button (click)="user()">User</button>
