@@ -11,12 +11,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormsModule } from '@angular/forms';
 import { CustomPipe } from './custom.pipe';
 import { HttpClientModule } from "@angular/common/http";
-<<<<<<< HEAD
 import { ProductsComponent } from './products/products.component';
 import { BoxComponent } from './box/box.component';
-=======
 import { UserComponent } from './user/user.component';
->>>>>>> 46b08159ab8beb0c8c30ca49a94c3732ca9377d4
 
 @NgModule({
   declarations: [
@@ -27,12 +24,9 @@ import { UserComponent } from './user/user.component';
     HeaderComponent,
     DashboardComponent,
     CustomPipe,
-<<<<<<< HEAD
     ProductsComponent,
-    BoxComponent
-=======
+    BoxComponent,
     UserComponent
->>>>>>> 46b08159ab8beb0c8c30ca49a94c3732ca9377d4
   ],
   imports: [
     BrowserModule,
